@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.magicmatch.mapper.EmployeesBasicMapper">
+	<insert id="addOne">
+        insert into tb_employees_basic(name, gender, age, isJapanese)
+        values (
+            #{name},
+            #{gender},
+            #{age},
+            #{isJapanese}
+        );
+    </insert>
+</mapper>
